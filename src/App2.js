@@ -13,12 +13,17 @@ function App() {
   useEffect(() => {
     if (keyword !== "" && keyword.length > 5) {
       console.log("SEARCH FOR", keyword);
-    }    
+    }
   }, [keyword]);
-  
+
   return (
     <div>
-      <input value={keyword} onChange={onChange} type="text" placeholder="Search here..." />
+      <input
+        value={keyword}
+        onChange={onChange}
+        type="text"
+        placeholder="Search here..."
+      />
       <h1>{counter}</h1>
       <button onClick={onClick}>click me</button>
     </div>
